@@ -1,0 +1,14 @@
+query Input {
+  cart {
+    lines {
+      id
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          title
+        }
+      }
+    }
+  }
+}
